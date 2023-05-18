@@ -45,92 +45,52 @@
     <section id="portfolio" class="section">
         <div class="container text-center">
             <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-2">Heater/Shaker Temperature Uniformity Fixture</h6>
+            <h6 class="section-title mb-2"> Makerbot Replicator 5+ Gantry Tester</h6>
         <div class="container text-left">
             <h6 class="section-title mb-2">Brief: </h6>
-            <p class="mb-0.5 pb-0.5"> Determine the temperature uniformity of a 96 flat bottom plate. </p>
+            <p class="mb-0.5 pb-0.5"> The Gantry tester is to determine
+            the parallelism on the two linear rails on the X Stage for Replicator 5+
+            by testing frictional force on the mechanical system. The test was designed
+            to identify a proper assembled gantry from a bad assemble gantry.
+            This fixture was to ensure that a customer would obtain a proper assembled
+            top bunk mechanical system to produce great print quality. In addition to designing
+            this fixture, I designed a test script that outputs a PASS/FAIL Creterion. </p>
         <div class="container test-left">
             <h6 class="section-title mb-2">Development: </h6>
             <ul style=“list-style-type:square”>
-                <li> Design a 16 channel thermistor PCBA</li>
-                <li> Design temperature fixture that can mount the 16 channel thermistor PCBA and attach to a 96 well flat bottom plate.</li>
-                <li>Calibrate the fixture using a thermal bath unit that</li>
-                <li>Design the fixture to fit a 96 wells that can measure the temperature of the liquid. </li>
-                <li>Ultilize mineral oil for testing uniformity.</li>
-                <li>Modify thermistor firmware to read temperature from the PCBA </li>
-                <li>Design a test script that streams data off the heater shaker and the PCBA thermistors </li>
+                <li> Design a fixture that automates the data collection and outputs into a csv file.</li>
+                <li> Create a test script that prompts the user with instructions.</li>
+                <li> Create a PASS/FAIL Creterion.</li>
+                <li> Write an standard operation procedure(SOP) for production.</li>
             <h6 class="section-title mb-2">PCBA and CAD Design</h6>
                 <!-- <div class="col-sm-5"> -->
                     <div class="img-wrapper">
-                        <img src="assets/imgs/project-2/HeaterShaker-Thermistor-Fixture.png" alt="">
-                        <div class="caption">HeaterShaker-Jellyfish-Fixture</div>
+                        <img src="assets/imgs/project-3/gantry-fixture-2.jpg" alt="">
+                        <div class="caption">Gantry Tester CAD Design</div>
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>HeaterShaker Jellyfish Fixture</h5>
-                                <a href="assets/imgs/project-2/HeaterShaker-Thermistor-Fixture.png"><i class="ti-zoom-in"></i></a>
+                                <h5>Gantry Tester CAD Design</h5>
+                                <a href="assets/imgs/project-3/gantry-fixture-2.jpg"><i class="ti-zoom-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- <div class="col-sm-5"> -->
                     <div class="img-wrapper">
-                        <img src="assets/imgs/project-2/probe-setup-2.png" alt="">
-                        <div class="caption">Jellyfish Fixture CAD Assembly</div>
+                        <img src="assets/imgs/project-3/gantry-fixture.jpg" alt="">
+                        <div class="caption">Gantry Tester Physical Model</div>
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Jellyfish Fixture CAD Assembly</h5>
-                                <a href="assets/imgs/project-2/probe-setup-2.png"><i class="ti-zoom-in"></i></a>
+                                <h5>Gantry Tester Physical Model</h5>
+                                <a href="assets/imgs/project-3/gantry-fixture.jpg"><i class="ti-zoom-in"></i></a>
                             </div>
                         </div>
                     </div>
-                <div class="container text-left">
-                    <h6 class="section-title mb-2">Physcial Model</h6>
-                    <p class="mb-0.5 pb-0.5">
-                    </p>
-                <div class="col-sm-6">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/project-2/jelly-fish-fixture.jpg" alt="">
-                        <div class="caption">Jellyfish Fixture installed on a prototype heater-shaker</div>
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Jellyfish Fixture installed on a prototype heater-shaker</h5>
-                                <a href="assets/imgs/project-2/jelly-fish-fixture.jpg"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/project-2/jelly-fish-fixture-2.jpg" alt="">
-                        <div class="caption">Jellyfish Fixture Bottom Thermistor Exposure</div>
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Jellyfish Fixture Bottom Thermistor Exposure</h5>
-                                <a href="assets/imgs/project-2/jelly-fish-fixture-2.jpg"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-10">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/project-2/temperature-uniformity-plot.jpg" alt="">
-                        <div class="caption">temperature-uniformity-plot</div>
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>temperature-uniformity-plot</h5>
-                                <a href="assets/imgs/project-2/temperature-uniformity-plot.jpg"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-left">
-                    <h6 class="section-title mb-2">Temperature uniformity plot</h6>
-                    <p class="mb-0.5 pb-0.5"> Example of a realtime plot that was designed with python by using the plotly library.
-                    </p>
-                </div>
-                <div class="container text-left">
+                <!-- <div class="container text-left">
                     <h6 class="section-title mb-2">Conclusion</h6>
                     <p class="mb-0.5 pb-0.5"> The design of this fixture proof useful for comparing competitor heater shaker and opentrons heatershaker modules. Both heater-shakers performed identifical which proof to be quite resourceful to determine our specifications for the product.
                     </p>
-                </div>
+                </div> -->
         </div>
     </section>
     <!-- End of portfolio section -->
