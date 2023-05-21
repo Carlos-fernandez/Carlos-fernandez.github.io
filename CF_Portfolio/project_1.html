@@ -96,16 +96,31 @@
                 <div class="container text-left">
                     <h6 class="section-title mb-2">Structure of Algorithm</h6>
                     <p class="mb-0.5 pb-0.5">
-                        <li>QC pipette script handles the main execution of the actual test, that includes function test, volume test qc, and multi-dispense test for any pipette.</li>
-                        <li> The calibration script allows the operator to save positions for each labware on the deck. This is required to run before the QC pipette script.</li>
-                        <li>All pipettes function with the test script</li>
-                        <li>If a new pipette is introduce, a production staff member will need to add a new version of the pipette to the labware_config.json and the test_config.json</li>
+                        <li>The QC pipette script serves as the primary executor
+                            for conducting of various tests, encompassing function
+                            tests, volume tests, and multi-dispense tests,
+                            applicable to all pipettes.</li>
+                        <li>Prior to running the QC pipette script,
+                            the calibration script enables operators to save
+                            positions for each labware on the deck.</li>
+                        <li>The test script accommodates all pipettes, ensuring
+                            compatibility across different models and variations.</li>
+                        <li>In the event of introducing a new pipette, a production
+                            staff member is responsible for adding the corresponding
+                            version to both the labware_config.json and the test_config.json files.</li>
                     </p>
                     <h6 class="section-title mb-2">Three Python Libraries</h6>
                     <p class="mb-0.5 pb-0.5">
-                        <li>Data process handles all the csv processing for each pipette and to load the configuration json files for the test.</li>
-                        <li>Rig Function library is predefined functions that handle the test functionality.</li>
-                        <li>Robot Functions library handles labware calibration functions and basic robot functions. For example: Move to Location, pick up tip, drop tip, trash tip, etc.</li>
+                        <li>The Data process module efficiently manages the
+                            processing of CSV data files for each pipette, as well
+                            as loading the configuration JSON files required for the test.</li>
+                        <li>The Rig Function library consists of pre-defined
+                            functions specifically designed to handle various
+                            test functionalities.</li>
+                        <li>The Robot Functions library encompasses essential
+                            robot functions and labware calibration functions.
+                            Examples include Move to Location, pick up tip, drop tip,
+                            trash tip, and more.</li>
                     </p>
                 <!-- <div class="col-sm-10"> -->
                     <div class="img-wrapper">
